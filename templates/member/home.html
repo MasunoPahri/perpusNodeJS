@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Beranda{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="container-fluid">
+        <center>
+            <h1 class="user">Selamat Datang di Perpustakaan Digital</h1>
+            <h3 class="user">Buku adalah Jendela Dunia, Membaca Membuka Wawasan Anda !</h3>
+        </center>
+        <div class="dashUser">
+            <p class="search">Cari Sebuah Buku Disini ! 
+                <form action="t" class="pencarian">
+                    <input type="text" name="cari" placeholder="Cari. . . ." class="userSearch">
+                    <button class="btn btn-primary">Cari</button>
+                </form>
+            </p>		
+        </div>
+        <center><h1 class="dash">Buku Terbaru</h1></center>
+        <div class="baru">
+            <div class="newBuku">
+                <img src="../image/logokampus.jpeg" class="new" />
+                <div class="detBuku">
+                    <table>
+                        <tr>
+                            <td>Judul</td>
+                            <td> : </td>
+                            <td class="newJudul">Ada Apa Dengan Cinta 2</td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td> : </td>
+                            <td>Tersedia</td>
+                        </tr>
+                        <tr>
+                            <td>Stok</td>
+                            <td> : </td>
+                            <td>20</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="newBuku">
+                <img src="../image/logokampus.jpeg" class="new" />
+                <div class="detBuku">
+                    <table>
+                        <tr>
+                            <td>Judul</td>
+                            <td> : </td>
+                            <td class="newJudul">Ada Apa Dengan Cinta 3</td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td> : </td>
+                            <td>Tersedia</td>
+                        </tr>
+                        <tr>
+                            <td>Stok</td>
+                            <td> : </td>
+                            <td>20</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="newBuku">
+                <img src="../image/logokampus.jpeg" class="new" />
+                <div class="detBuku">
+                    <table>
+                        <tr>
+                            <td>Judul</td>
+                            <td> : </td>
+                            <td class="newJudul">Ada Apa Dengan Cinta 4</td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td> : </td>
+                            <td>Tersedia</td>
+                        </tr>
+                        <tr>
+                            <td>Stok</td>
+                            <td> : </td>
+                            <td>20</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>	
+</div>
+{% endblock %}

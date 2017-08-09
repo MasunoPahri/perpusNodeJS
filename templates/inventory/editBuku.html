@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Daftar Semua Buku{% endblock %}
+
+
+{% block content %}
+<div class="content">
+    <div class="container-fluid">
+        <center><h1>INPUT DATA BUKU</h1></center>
+        <div class="tabel">
+            {% for item in data %}
+            <form method="post" action="/upBook/{{ item.kd_buku }}">
+                <table>
+                    <tr>
+                        <td class="id">
+                            Judul
+                        </td>
+                        <td>
+                            <input type="text" name="judul" class="form-control"
+                                placeholder="Judul Buku" value="{{ item.jdl_buku }}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="id">
+                            Penulis
+                        </td>
+                        <td>
+                            <input type="text" name="penulis" class="form-control"
+                                placeholder="Nama Penulis Buku" value="{{ item.penulis }}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="id">
+                            Penerbit
+                        </td>
+                        <td>
+                            <input type="text" name="penerbit" class="form-control"
+                                 placeholder="Penerbit" value="{{ item.penerbit }}"></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="id">
+                            Deskripsi
+                        </td>
+                        <td>
+                            <textarea type="text" name="deskripsi" class="form-control" rows="10"
+                                 placeholder="Tuliskan deskripsi buku">{{ item.sinopsis }}</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="id">
+                            Foto Buku
+                        </td>
+                        <td>
+                            <input type="file" class="form-control"
+                                name="upload" accept="image/*" value="{{ item.foto }}"></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" class="btn btn-primary btn-block" name="update" value="Simpan">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Pinjam Buku{% endblock %}
+
+
+{% block content %}
+<div class="content">
+    <div class="container-fluid">
+        <center><h1>Cari Buku</h1></center>
+        <div class="row">
+            <form action="./dataBuku" method="post">
+                <div class="col-md-10">
+                    <input type="text" name="kdBuku" placeholder="masukkan kode buku..." class="form-control">
+                </div>
+                <div class="col-md-2">
+                    <input type="submit" class="btn btn-primary btn-block">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

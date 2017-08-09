@@ -1,0 +1,70 @@
+td.tede{
+	text-align: left;
+}	
+
+.tabel{
+	min-height: 600px;
+	margin-top: 50px;
+}
+
+input.tede{
+	width: 20px;
+}
+.tombol{
+	margin: 0 auto;
+	width: 96px;
+	padding: 5px;
+}
+
+.daftar{
+	margin: 0 auto;
+	width: 170px;
+}
+
+.lupa{
+	margin: 0 auto;
+	width: 120px;
+}
+
+a:hover{
+	text-decoration: none;
+	color: red;
+}
+
+.remember{
+	margin: 0 auto;
+	width: 125px;
+}
+
+.header{
+	width: 100%;
+    background: #d40b0b;
+    height: 70px;
+    margin: 0;
+    border-radius: 5px;s
+}
+
+.header h2{
+	text-align: center;
+	padding: 20px;
+
+}
+
+.header p{
+	text-align: center;
+}
+
+.footer{
+	height: 50px;
+	background: #cecece;
+	padding: 5px;
+	border-radius: 5px;
+}
+.footer p{
+	text-align: center;
+}
+
+.tombol a{
+	color: white;
+	font-weight: bold;
+}

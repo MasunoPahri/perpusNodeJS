@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Daftar Semua Buku{% endblock %}
+
+
+{% block content %}
+<div class="content">
+    <div class="container-fluid">
+        <center><h1>DAFTAR SEMUA BUKU</h1></center>
+        <div class="tabel">
+            <table class="buku">
+                <tr>
+                    <th>Judul Buku</th>
+                    <th>Penulis</th>
+                    <th>Penerbit</th>
+                    <th>Tersedia</th>
+                    <th>Dipinjam</th>
+                    <th colspan="2"></th>
+                </tr>
+                {% for item in data %}
+                <tr>
+                    <td>
+                        <a href="/detail/{{ item.kd_buku }}">{{ item.jdl_buku }}</a>
+                    </td>
+                    <td>{{ item.penulis }}</td>
+                    <td>{{ item.penerbit }}</td>
+                    <td>{{ item.stok - item.jlhPeminjam }}</td>
+                    <td>
+                        {% if(item.jlhPeminjam > 0) %}
+                            {{ item.jlhPeminjam }}
+                        {% else %}
+                            0
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a class="btn btn-primary" href="/editBook/{{ item.kd_buku }}">EDIT</a>
+                    </td>
+                    <td>
+                        <form action="/dltBook/{{ item.kd_buku }}" method="post">
+                            <input type="hidden" value="{{ item.kd_buku }}" name="dltItem">
+                            <button type="submit" class="btn btn-danger">HAPUS</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

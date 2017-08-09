@@ -1,0 +1,186 @@
+body{
+	margin:0 auto;
+	width:100%;
+}
+input{
+	margin: 10px;
+	width: 450px;
+}
+textarea{
+	margin: 10px;
+	width: 450px;
+	height: 300px;
+}
+table{
+	margin: 0 auto;
+	text-align: left;
+}
+h1{
+	margin: 30px auto;
+	margin-bottom: 50px;
+}
+h1.user{
+	margin: 30px auto;
+	margin-bottom: 0px;
+}
+h1.dash{
+	margin:30px auto 10px;
+}
+h3.user{
+	margin-bottom: 50px;
+}
+.content{
+	min-height: 550px;
+}
+td.id{
+	text-align: left;
+}
+.submit{
+	margin: 0 auto;
+	width: 0px;
+	margin-top: 20px;
+}
+table.buku tr{
+	text-align: center;
+}
+table.buku th{
+	border: 1px solid black;
+	text-align: center;
+	min-width: 0px;
+	padding: 5px;
+}
+table.buku td{
+	border: 1px solid black;
+	padding: 10px;
+}
+table.buku td.button{
+	border: none;
+	padding: 5px;
+}
+table.buku td.button button{
+	border: none;
+	margin: 5px;
+}
+table.buku td a{
+	color: black;
+}
+table.buku td a:hover{
+	color: black;
+	text-decoration: none;
+}
+.detil{
+	margin: 10px auto;
+	float: left;
+}
+img{
+	width: 300px;
+	border: 1px solid blue;
+	border-radius: 20px;
+	float: left;
+}
+.keterangan{
+	width: 450px;
+	float: left;
+}
+.keterangan td{
+	padding-left:20px;
+	padding-top: 25px;
+	font-size: 15px; 
+}
+.sinopsis{
+	clear: both;
+	text-align: justify;
+	margin-top: 20px;
+	float: left;
+}
+.dashboard{
+	margin: 20px;
+}
+.dashboard p{
+	margin-left: 10px;
+}
+.dashboard input{
+	padding: 5px;
+	border-radius: 5px;
+}
+footer{
+	margin-top: 20px;
+	background: #cecece;
+	border-radius: 5px;
+	padding: 10px;
+	padding-bottom: 5px;
+	width: 100%;
+}
+.notif{
+	width: 750px;
+	margin: 0 auto;
+	background: #e7e7e7;
+    padding: 10px;
+    border-radius: 10px;
+}
+.name{
+    width: 100%;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+span.user{
+	font-size: 12px;
+	color: gray;
+}
+span.judul{
+	font-weight: bold;
+}
+.baru{
+	margin: 0 auto;
+	width: 87%;
+	clear: both;
+}
+.newBuku{
+	width: 300px;
+	margin: 10px 10px;
+	padding: 5px;
+	background: #e7e7e7;
+	border-radius: 10px;
+	float: left;
+}
+img.new{
+	width: 90%;
+	float: none;
+	margin: 0 auto;
+	margin-left: 15px;
+
+}
+.detBuku tr td.newJudul{
+	width: 200px;
+}
+.detBuku tr td{
+	padding: 5px;
+}
+.dashUser{
+	margin: 20px;
+	margin-top: 60px;
+}
+p.search{
+	margin-left: 35px;
+	float: left;
+	padding-top: 15px;
+}
+input.userSearch{
+	width: 750px;
+	margin: 10px;
+	margin-left: 20px;
+}
+.data{
+	margin:0 auto;
+}
+label{
+	margin: 20px auto;
+	font-size: 20px;
+}
+.data tr td{
+	padding: 10px;
+}
+h2.peminjam{
+	margin-top: 50px;
+	margin-bottom: 30px; 
+}

@@ -1,0 +1,24 @@
+tb_peminjaman
+#kd_transaksi
+#id_user
+#kd_buku
+#tglPinjam
+#tglKembali
+#status(0: kembali/1: dipinjam)
+
+tb_buku
+#kd_buku
+#jdl_buku
+#penulis
+#sinopsis
+#penerbit
+#stok
+
+tb_statusBuku
+#id_transaksi
+#kd_buku
+#jlhPeminjam
+#Trigger After insert (tambah jlh peminjam)
+#Trigger After update (kurang jlh peminjam)
+
+utk membatasi hak akses navigasi, saat user melakukan login 'peran' dari user harus di passing ke html

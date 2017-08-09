@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Pinjam Buku{% endblock %}
+
+
+{% block content %}
+<div class="content">
+    <div class="container-fluid">
+        <center><h1>Data Buku</h1></center>
+        {% if (len) != 0 %}
+            {% for item in data %}
+            <div class="detil row col-md-12">
+                <div class="pull-right col-md-3">
+                    <form action="proses" method="post">
+                        <input type="text" name="nim" class="form-control"
+                            placeholder="Masukkkan NIM">
+                        <input type="date" name="tglKembali" class="form-control">
+                        <input type="hidden" name="kdBuku" value="{{ item.kd_buku }}">
+                        <input type="submit" class="btn btn-primary btn-block"
+                            value="Pinjam Buku">
+                    </form>
+                </div>
+                <img src="../image/logokampus.jpeg"/>
+                <div class="keterangan">
+                    <table>
+                        <tr>
+                            <td><strong>Judul</strong></td>
+                            <td><strong> :</strong> </td>
+                            <td><strong>{{ item.jdl_buku }}</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Penulis</td>
+                            <td> : </td>
+                            <td>{{ item.penulis }}</td>
+                        </tr>
+                        <tr>
+                            <td>Penerbit</td>
+                            <td> : </td>
+                            <td>{{ item.penerbit }}</td>
+                        </tr>
+                        <tr>
+                            <td>Stok</td>
+                            <td> : </td>
+                            <td>{{ item.stok }}</td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td> : </td>
+                            <td>Tersedia/Dipinjam</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="sinopsis">
+                <p id="sinopsis">{{ item.sinopsis }}</p>
+            </div>
+            {% endfor %}
+        {% else %}
+        <div>
+            <p><center><b>Buku Tidak Ditemukan!!!</b></center></p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
